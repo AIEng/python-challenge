@@ -14,6 +14,7 @@ vote_percent= {}
 
 election_data = os.path.join(".", "election_data.csv")
 
+#this is a useless message
 #opening CSV file
 with open(election_data,newline='') as csvfile:
    csvreader = csv.reader(csvfile, delimiter=",")
