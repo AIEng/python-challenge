@@ -10,7 +10,7 @@ revenue_changes = []
 months = []
 
 # open csv file
-with open(r'C:\Users\engmo\Desktop\PREWORK_MIQ\Module-3\budget_data.csv', 'r') as csvfile:
+with open(r'C:\Users\engmo\Desktop\python-challenge\PyBank\budget_data.csv', 'r') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
 
     csv_header = next(csvreader)
@@ -46,7 +46,7 @@ print(f"Greatest Increase in Revenue: {max_month} (${max_change})")
 print(f"Greatest Decrease in Revenue: {min_month} (${min_change})")
 
 # save summary to txt
-output_path = os.path.join(r'C:\Users\engmo\Desktop\PREWORK_MIQ\Module-3\New_data.txt')
+output_path = os.path.join(r'C:\Users\engmo\Desktop\python-challenge\PyBank\New_data.txt')
 
 with open(output_path,'w', newline='') as txtfile:
     
